@@ -1,0 +1,88 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/report/style.css">
+</head>
+<h1>業務日報一覧画面</h1>
+<body>
+    <div class="header_container">
+        <div class="tutorial">
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item <i class="fa fa-angle-down"></i>
+                    <ul>
+                        <li>sample</li>
+                        <li>sample</li>
+                        <li>sample</li>
+                        <li>sample</li>
+                    </ul>
+                </li>
+                <li>item <i class="fa fa-angle-down"></i>
+                    <ul>
+                        <li>sample</li>
+                        <li>sample</li>
+                        <li>sample</li>
+                        <li>sample</li>
+                        <li>sample</li>
+                    </ul>
+                </li>
+                <li>item</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <form id="filter_option" action="#" method="get">
+        <label class="head_container">操作オプション</label>
+        <ul id="searchBox">
+            <li class="item">
+                <dl>
+                    <dt>施設</dt>
+                    <dd>
+                        <select name="tag">
+                            <option value="">----------</option>
+                            <option value="">施設1</option>
+                            <option value="">施設2</option>
+                            <option value="">施設3</option>
+                        </select>
+                    </dd>
+                </dl>
+            </li>
+            <li class="item">
+                <dl>
+                    <dt>日付絞込</dt>
+                    <dd class="">
+                        <input name="date" type="date" maxlength="9">
+                        ～
+                        <input name="date" type="date" maxlength="9">
+                    </dd>
+                </dl>
+                <input type="search" name="search" placeholder="キーワードを入力">
+                <input type="submit" name="submit" value="検索">
+            </li>
+        </ul>
+    </form>
+    <form id="option">
+        <label class="label_container">業務日報</label>
+        <div class="container">
+            <div class="head">
+                <div class="row">
+                    <div class="col-sm">登録日</div>
+                    <div class="col-sm">所属</div>
+                    <div class="col-sm">名前</div>
+                    <div class="col-sm">編集</div>
+                    <div class="col-sm">最終更新日</div>
+                </div>
+                <table class="text-center">
+                    <tr>
+                    	<th>2021/02/13</th>
+                        <th>介護</th>
+                        <th>佐藤一二三</th>
+                        <th><a href="report_detail.html">編集する</a></th>
+                    	<th>2021/02/14</th>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
